@@ -66,3 +66,7 @@ console.log(fruits);  //[ 'apple', 'banana', 'cherry' ]
 let sentence = "apple1banana2cherry3dates";
 let fruits2 = sentence.split(/\d/);  //Split by any digit (0-9)
 console.log(fruits2);  //[ 'apple', 'banana', 'cherry', 'dates' ]
+
+
+
+
