@@ -35,31 +35,31 @@ for(const greet of greetings){
 // Map the map holds key-value pairs and remember the original insertion order of the keys
 // unique
 
-const map = new Map()
-map.set('IN', "India")
-map.set("USA", "United States of America")
-map.set("Fr", "France")
-map.set("IN", "India")
+const map = new Map();
+map.set('IN', "India");
+map.set("USA", "United States of America");
+map.set("Fr", "France");
+map.set("IN", "India");
 
 
-console.log(map)
+console.log(map);
 
 for(const key of map){
-    console.log(key)
+    console.log(key);
 }
 // [ 'IN', 'India' ]
 // [ 'USA', 'United States of America' ]
 // [ 'Fr', 'France' ]
 
 for(const [key, value] of map){
-    console.log(key, ":-", value)
+    console.log(key, ":-", value);
 }
 // IN :- India
 // USA :- United States of America
 // Fr :- France
 
 for(const [key, value] of map){
-   console.log(`key ${key}, value ${value}`)
+   console.log(`key ${key}, value ${value}`);
 }
 // key IN, value India
 // key USA, value United States of America
@@ -75,7 +75,7 @@ const myObject = {
 }
   
 for(const [key, value] of myObject){
-    console.log(key, value)
+    console.log(key, value);
 }
 // myObject is not iterable
 
@@ -98,14 +98,14 @@ console.log(Object.entries(person));
 // [ [ 'name', 'John' ], [ 'age', 25 ], [ 'job', 'developer' ] ]
 
 for(const i of Object.keys(person)){
-    console.log(`${i}`)
+    console.log(`${i}`);
 }
 // name
 // age
 // job
 
 for(const i of Object.values(person)){
-    console.log(`${i}`)
+    console.log(`${i}`);
 }
 // John
 // 25
