@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1  id="title"  class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <P>Lorem ipsum dolor sit amet.</P>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>  
+
+
+<!-- 
+const tempLiList = document.querySelectorAll('li')
+tempLiList
+NodeList(3) [li, li, li]
+it is NodeList not array
+
+tempLiList.style.color = 'green'
+VM1070:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:24
+(anonymous) @ VM1070:1Understand this errorAI
+
+
+tempLiList[0].style.color = 'green'
+'green'
+
+tempLiList.forEach((item)=>console.log(item))
+<li>one</li> 
+<li>two</li> 
+<li>two</li>
+
+tempLiList.forEach(function (l){
+    l.style.backgroundColor = 'green'
+    
+})
+
+myH1 = document.querySelectorAll('h1')
+
+NodeList [h1#title.heading]0: h1#title.headinglength: 1[[Prototype]]: NodeList
+myH1.style.color = 'green'
+VM1607:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:18
+(anonymous) @ VM1607:1Understand this errorAI
+
+myH1[0].style.color = "green"
+'green'
+
+-->
