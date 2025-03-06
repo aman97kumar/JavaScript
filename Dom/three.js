@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1  id="title"  class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <P>Lorem ipsum dolor sit amet.</P>
+        <input type="password" name="" id="">
+    </div>
+</body>
+</html>
+
+
+{/* 
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet consectetur.​</h2>​
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​ 
+
+document.querySelector('input[type="password"]')
+<input type="password" name="" id=""> */}
+    
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1  id="title"  class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <P>Lorem ipsum dolor sit amet.</P>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+</html>  
+
+
+{/* document.querySelector('ul')
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+
+
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+<li>one</li>
+
+
+const turnGreen = myul.querySelector('li')
+
+
+turnGreen.style.backgroundColor = "green";
+
+turnGreen.style.padding = "10px"
+'10px'
+
+turnGreen.innerText
+'one'
+
+turnGreen.innerText = "five"
+'five' */}
