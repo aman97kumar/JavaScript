@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // Assign the interval ID to a variable
+    // const intervalId = setInterval(function() {
+    // console.log("aman");
+    // }, 2000);
+
+    // To stop the interval after a certain condition or time
+    // clearInterval(intervalId);
+
+    // setInterval(function(){
+    //     console.log("aman")
+    // }, 2000)
+
+    // const saydate = function(){
+    //     console.log("aman", Date.now())
+    // }
+    // setInterval(saydate, 10000)
+
+    // taking input in 
+    // const saydate = function(str){
+    //     console.log(str, Date.now())
+    // }
+    // setInterval(saydate, 10000, "hi")
+
+
+    // const saydate = function (str) {
+    //     console.log("First function:", str, Date.now());
+    // };
+    // const intervalId1 = setInterval(saydate, 1000, "hi");
+    // clearInterval(intervalId1);
+
+    // const saydate = function (str) {
+    //     console.log("Second function:", str, Date.now());
+    // };
+    // const intervalId2 = setInterval(saydate, 1000, "hello");
+    // clearInterval(intervalId2);
+
+
+    // const changeTx = function () {
+    //     document.querySelector('h1').innerHTML = "aman";
+    // }
+    // document.querySelector('#start').addEventListener('click', function () {
+    //     setInterval(changeTx, 1000)
+    // })
+
+    // document.querySelector("#stop").addEventListener('click', function(){
+    //     clearInterval(changeTx)
+    // })
+
+    const originalText = document.querySelector('h1').innerHTML; // Store the original text
+    let intervalId;
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "Aman";
+    };
+
+    document.querySelector('#start').addEventListener('click', function () {
+        if (!intervalId) { // Prevent multiple intervals from being set
+            intervalId = setInterval(changeText, 1000);
+        }
+    });
+
+    document.querySelector("#stop").addEventListener('click', function () {
+        if (intervalId) {
+            clearInterval(intervalId); // Clear the interval
+            intervalId = null;
+            document.querySelector('h1').innerHTML = originalText; // Reset to original text
+        }
+    });
+
+
+</script>
+
+</html>
